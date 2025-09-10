@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 
 export default function Home() {
   const [loading, setLoading] = useState(null)
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(true)
   const [showLogin, setShowLogin] = useState(true)
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
