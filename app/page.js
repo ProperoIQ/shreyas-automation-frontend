@@ -18,7 +18,7 @@ export default function Home() {
   const [dateFilter, setDateFilter] = useState('PreviousMonth')
 
   const handleLogin = () => {
-    if (username === 'milind' && password === 'admin11') {
+    if (username === 'trs' && password === 'admin11') {
       setIsAuthenticated(true)
       setShowLogin(false)
     } else {
