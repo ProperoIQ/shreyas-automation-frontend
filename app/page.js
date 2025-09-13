@@ -30,7 +30,7 @@ export default function Home() {
     setLoading(reportType)
     try {
       const response = await fetch(
-        `https://automation-backend-589889616484.asia-south1.run.app/${endpoint}?date_filter=${dateFilter}`,
+        `http://127.0.0.1:8000/${endpoint}?date_filter=${dateFilter}`,
         { method: 'POST' }
       )
 
@@ -100,14 +100,19 @@ export default function Home() {
               </SelectTrigger>
               <SelectContent >
                 <SelectItem  value="Today">Today</SelectItem>
-               
-               
+               <SelectItem value="Yesterday">Yesterday</SelectItem>
+                <SelectItem value="ThisWeek">This Week</SelectItem>
+                <SelectItem value="ThisMonth">This Month</SelectItem>
+                <SelectItem value="ThisQuarter">This Quarter</SelectItem>
                 <SelectItem value="ThisYear">This Year</SelectItem>
-                <SelectItem value="ThisMonth">Previous Month</SelectItem>
-               
+         
+                <SelectItem value="PreviousWeek">Previous Week</SelectItem>
                 <SelectItem value="PreviousMonth">Previous Month</SelectItem>
-
+                <SelectItem value="PreviousQuarter">Previous Quarter</SelectItem>
                 <SelectItem value="PreviousYear">Previous Year</SelectItem>
+
+             
+
               </SelectContent>
             </Select>
 
