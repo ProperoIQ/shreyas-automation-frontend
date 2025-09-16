@@ -30,7 +30,7 @@ export default function Home() {
     setLoading(reportType)
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/${endpoint}?date_filter=${dateFilter}`,
+        `https://automation-backend-589889616484.asia-south1.run.app/${endpoint}?date_filter=${dateFilter}`,
         { method: 'POST' }
       )
 
