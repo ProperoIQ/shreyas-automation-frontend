@@ -15,7 +15,7 @@ export default function Home() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
-  const [dateFilter, setDateFilter] = useState('PreviousMonth')
+  const [dateFilter, setDateFilter] = useState('PreviousDay')
 
   const handleLogin = () => {
     if (username === 'trs' && password === 'admin11') {
@@ -100,7 +100,7 @@ export default function Home() {
               </SelectTrigger>
               <SelectContent >
                 <SelectItem  value="Today">Today</SelectItem>
-               <SelectItem value="Yesterday">Yesterday</SelectItem>
+               <SelectItem value="PreviousDay">PreviousDay</SelectItem>
                 <SelectItem value="ThisWeek">This Week</SelectItem>
                 <SelectItem value="ThisMonth">This Month</SelectItem>
                 <SelectItem value="ThisQuarter">This Quarter</SelectItem>
